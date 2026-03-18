@@ -6,6 +6,14 @@ __pycache__/
 # C extensions
 *.so
 
+# Kaggle API credentials
+.kaggle/
+kaggle.json
+**/kaggle.json
+
+# uv package manager lock file
+uv.lock
+
 # Distribution / packaging
 .Python
 build/

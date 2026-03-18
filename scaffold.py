@@ -1,7 +1,33 @@
+"""
+Project scaffolding script — Housing Regression MLE End-to-End Deployment.
 
-from setuptools import setup  # noqa: F401
+Run this once after cloning to create the full folder structure and placeholder files.
 
-BASE = None  # unused — see scaffold.py
+Usage:
+    python scaffold.py
+"""
+
+from pathlib import Path
+
+BASE = Path(__file__).parent
+
+DIRS = [
+    ".github/workflows",
+    "config/great_expectations",
+    "data/raw",
+    "data/processed",
+    "data/features",
+    "docker",
+    "infrastructure",
+    "mlruns",
+    "models/artifacts",
+    "notebooks",
+    "src/api/routers",
+    "src/dashboard",
+    "src/pipeline",
+    "src/utils",
+    "tests",
+]
 
 FILES = {
     # ── Environment & config ──────────────────────────────────────────────────

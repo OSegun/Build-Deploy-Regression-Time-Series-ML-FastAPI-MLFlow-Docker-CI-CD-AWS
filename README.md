@@ -83,10 +83,10 @@ cd Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS
 
 ### 3. Scaffold the Project Structure
 
-Run the setup script to create all directories and placeholder files:
+Run the scaffolding script to create all directories and placeholder files:
 
 ```bash
-python setup.py
+python scaffold.py
 ```
 
 This creates the full folder tree (`src/`, `data/`, `docker/`, `infrastructure/`, `tests/`, etc.) with starter files so you can begin building immediately.
@@ -134,11 +134,26 @@ uv pip install -r requirements.txt
 
 1. Go to [https://www.kaggle.com/datasets/shengkunwang/housets-dataset](https://www.kaggle.com/datasets/shengkunwang/housets-dataset)
 2. Download and extract the CSV file(s) into a `data/raw/` directory:
+    Go to your Kaggle account → Settings → Create API Token
+    This downloads kaggle.json or create a kaggle.json file and copy the json below putting your API Token and username
+    
+    ```json
+    {
+        "username":"your_username",
+        "key":"your_api_token"
+    }
+    ```
 
-```bash
-mkdir -p data/raw
-# Place the downloaded dataset file(s) inside data/raw/
-```
+    Place that file into:
+    ```bash
+    ~/.kaggle/kaggle.json
+    ```
+
+    In your /notebooks/01_data_split.ipynb, open a cell to download
+    ```bash
+    !kaggle datasets download -d shengkunwang/housets-dataset -p data/raw --unzip
+    ```
+    This will download into data/raw
 
 ### 8. Configure Environment Variables
 
