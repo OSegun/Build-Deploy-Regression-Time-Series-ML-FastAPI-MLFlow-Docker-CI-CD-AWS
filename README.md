@@ -149,9 +149,10 @@ uv pip install -r requirements.txt
     ~/.kaggle/kaggle.json
     ```
 
-    In your /notebooks/01_data_split.ipynb, open a cell to download
+    In your /notebooks/01_data_ingest.ipynb, open a cell to download
     ```bash
-    !kaggle datasets download -d shengkunwang/housets-dataset -p data/raw --unzip
+    !kaggle datasets files shengkunwang/housets-dataset # To see the files
+    !kaggle datasets download -d shengkunwang/housets-dataset -f HouseTS.csv -p ../data/raw # Download the file --unzip
     ```
     This will download into data/raw
 
