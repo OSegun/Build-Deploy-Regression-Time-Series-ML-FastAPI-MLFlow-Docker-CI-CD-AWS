@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/01967c45838d40a8937cde3306fae18b/artifacts
+end_time: 1777231199163
+entry_point_name: ''
+experiment_id: '235894747857217727'
+lifecycle_stage: active
+run_id: 01967c45838d40a8937cde3306fae18b
+run_name: best_xgboost_model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777231181419
+status: 3
+tags: []
+user_id: HP

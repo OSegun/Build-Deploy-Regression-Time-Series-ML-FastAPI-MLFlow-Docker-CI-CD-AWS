@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/2e3655ce3044431ca6d59152c23e81be/artifacts
+end_time: 1777228173185
+entry_point_name: ''
+experiment_id: '235894747857217727'
+lifecycle_stage: active
+run_id: 2e3655ce3044431ca6d59152c23e81be
+run_name: mercurial-stoat-822
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777228144625
+status: 3
+tags: []
+user_id: HP

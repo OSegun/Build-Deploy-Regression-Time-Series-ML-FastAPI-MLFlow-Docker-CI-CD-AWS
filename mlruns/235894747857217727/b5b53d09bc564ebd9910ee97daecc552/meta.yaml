@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/b5b53d09bc564ebd9910ee97daecc552/artifacts
+end_time: 1777227647628
+entry_point_name: ''
+experiment_id: '235894747857217727'
+lifecycle_stage: active
+run_id: b5b53d09bc564ebd9910ee97daecc552
+run_name: legendary-zebra-169
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777227483077
+status: 3
+tags: []
+user_id: HP

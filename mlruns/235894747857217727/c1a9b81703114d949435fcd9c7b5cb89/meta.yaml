@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/c1a9b81703114d949435fcd9c7b5cb89/artifacts
+end_time: 1777227810583
+entry_point_name: ''
+experiment_id: '235894747857217727'
+lifecycle_stage: active
+run_id: c1a9b81703114d949435fcd9c7b5cb89
+run_name: stylish-snail-757
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777227767920
+status: 3
+tags: []
+user_id: HP

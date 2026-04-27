@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/d4c13dcea23e462b9b3cd7bc92147bce/artifacts
+end_time: 1777227986167
+entry_point_name: ''
+experiment_id: '235894747857217727'
+lifecycle_stage: active
+run_id: d4c13dcea23e462b9b3cd7bc92147bce
+run_name: delicate-hare-378
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777227917951
+status: 3
+tags: []
+user_id: HP

@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/20fb6f3aec654d8a919a14cb8fe923d4/artifacts
+end_time: 1777228083633
+entry_point_name: ''
+experiment_id: '235894747857217727'
+lifecycle_stage: active
+run_id: 20fb6f3aec654d8a919a14cb8fe923d4
+run_name: calm-sponge-246
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777228063754
+status: 3
+tags: []
+user_id: HP

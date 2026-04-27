@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/df4161a7268e43b99b1a3b329af5db08/artifacts
+end_time: 1777227710357
+entry_point_name: ''
+experiment_id: '235894747857217727'
+lifecycle_stage: active
+run_id: df4161a7268e43b99b1a3b329af5db08
+run_name: crawling-bee-749
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777227647691
+status: 3
+tags: []
+user_id: HP

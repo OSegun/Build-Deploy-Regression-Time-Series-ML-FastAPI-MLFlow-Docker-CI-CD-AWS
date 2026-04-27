@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/3e67da67af1542efb4839a68d85d4332/artifacts
+end_time: 1777227483058
+entry_point_name: ''
+experiment_id: '235894747857217727'
+lifecycle_stage: active
+run_id: 3e67da67af1542efb4839a68d85d4332
+run_name: rogue-ox-235
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777227438747
+status: 3
+tags: []
+user_id: HP

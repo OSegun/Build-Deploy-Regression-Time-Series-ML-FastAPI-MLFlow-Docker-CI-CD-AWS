@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/9de0b0986ab5441f9fe4244ed1a46a50/artifacts
+end_time: 1777228027542
+entry_point_name: ''
+experiment_id: '235894747857217727'
+lifecycle_stage: active
+run_id: 9de0b0986ab5441f9fe4244ed1a46a50
+run_name: wistful-bat-767
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777227986185
+status: 3
+tags: []
+user_id: HP

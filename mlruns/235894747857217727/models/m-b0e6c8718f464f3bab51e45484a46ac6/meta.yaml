@@ -1,0 +1,10 @@
+artifact_location: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/models/m-b0e6c8718f464f3bab51e45484a46ac6/artifacts
+creation_timestamp: 1777279646310
+experiment_id: '235894747857217727'
+last_updated_timestamp: 1777279656655
+model_id: m-b0e6c8718f464f3bab51e45484a46ac6
+model_type: null
+name: model
+source_run_id: 339e877c95334605a890e7f31c3b14c9
+status: 2
+status_message: null

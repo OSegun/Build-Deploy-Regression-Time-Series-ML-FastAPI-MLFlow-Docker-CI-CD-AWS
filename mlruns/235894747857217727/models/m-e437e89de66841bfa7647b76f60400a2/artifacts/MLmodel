@@ -1,0 +1,22 @@
+artifact_path: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/models/m-e437e89de66841bfa7647b76f60400a2/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.11.12
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBRegressor
+    model_format: ubj
+    xgb_version: 3.2.0
+mlflow_version: 3.10.1
+model_id: m-e437e89de66841bfa7647b76f60400a2
+model_size_bytes: 5411480
+model_uuid: m-e437e89de66841bfa7647b76f60400a2
+prompts: null
+run_id: 01967c45838d40a8937cde3306fae18b
+utc_time_created: '2026-04-26 19:19:42.087122'

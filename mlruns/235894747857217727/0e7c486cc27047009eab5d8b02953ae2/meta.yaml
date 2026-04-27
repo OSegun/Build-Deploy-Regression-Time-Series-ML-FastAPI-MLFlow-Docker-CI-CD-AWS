@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/0e7c486cc27047009eab5d8b02953ae2/artifacts
+end_time: 1777227917932
+entry_point_name: ''
+experiment_id: '235894747857217727'
+lifecycle_stage: active
+run_id: 0e7c486cc27047009eab5d8b02953ae2
+run_name: sneaky-crane-285
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777227810609
+status: 3
+tags: []
+user_id: HP

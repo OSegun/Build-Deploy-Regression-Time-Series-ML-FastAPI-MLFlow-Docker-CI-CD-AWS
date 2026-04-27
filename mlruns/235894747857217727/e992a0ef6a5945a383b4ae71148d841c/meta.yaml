@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/notebooks/../mlruns/235894747857217727/e992a0ef6a5945a383b4ae71148d841c/artifacts
+end_time: 1777228144585
+entry_point_name: ''
+experiment_id: '235894747857217727'
+lifecycle_stage: active
+run_id: e992a0ef6a5945a383b4ae71148d841c
+run_name: grandiose-skunk-953
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777228119418
+status: 3
+tags: []
+user_id: HP
