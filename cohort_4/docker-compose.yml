@@ -1,0 +1,87 @@
+# All database services on Docker.
+#
+# Start:   docker compose up -d
+# Stop:    docker compose down        (add -v to also delete stored data)
+#
+# PostgreSQL (Nepal earthquake):
+#   Load:    python load_postgres.py
+#   Connect: postgresql+psycopg://datalab:datalab@localhost:5432/nepal
+#   pgAdmin: http://localhost:5050  (admin@datalab.com / datalab)
+#
+# MongoDB (air quality, A/B test):
+#   Load:    python load_mongo.py --uri "mongodb://datalab:datalab@localhost:27017"
+#   Connect: mongodb://datalab:datalab@localhost:27017
+#   Mongo Express: http://localhost:80812 (admin@datalab / datalab)
+
+name: datalab-databases
+services:
+  nepal-postgres:
+    image: postgres:16.4
+    container_name: datalab-nepal-postgres
+    environment:
+      POSTGRES_USER: datalab
+      POSTGRES_PASSWORD: datalab
+      POSTGRES_DB: nepal
+    ports:
+      - "5432:5432"
+    volumes:
+      - nepal-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U datalab -d nepal"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: datalab-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@datalab.com
+      PGADMIN_DEFAULT_PASSWORD: datalab
+      PGADMIN_SERVER_JSON_FILE: /pgadmin4/servers.json
+      PGADMIN_REPLACE_SERVERS_ON_STARTUP: "True"
+      PGPASS_FILE: /pgpass
+    ports:
+      - "127.0.0.1:5050:80"
+    depends_on:
+      nepal-postgres:
+        condition: service_healthy
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+      - ./servers.json:/pgadmin4/servers.json:ro
+      - ./pgpass:/var/lib/pgadmin/pgpass:ro
+
+  mongo:
+    image: mongo:7.0
+    container_name: datalab-mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: datalab
+      MONGO_INITDB_ROOT_PASSWORD: datalab
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.runCommand('ping').ok", "--quiet"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  mongo-express:
+    image: mongo-express:1.0
+    container_name: datalab-mongo-express
+    environment:
+      ME_CONFIG_MONGODB_URL: mongodb://datalab:datalab@datalab-mongo:27017/
+      ME_CONFIG_BASICAUTH: "true"
+      ME_CONFIG_BASICAUTH_USERNAME: admin@datalab
+      ME_CONFIG_BASICAUTH_PASSWORD: datalab
+    ports:
+      - "127.0.0.1:8082:8081"
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+volumes:
+  nepal-pgdata:
+  pgadmin-data:
+  mongo-data:
