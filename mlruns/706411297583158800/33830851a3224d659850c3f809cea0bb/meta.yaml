@@ -1,0 +1,14 @@
+artifact_uri: file:///mnt/c/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/mlruns/706411297583158800/33830851a3224d659850c3f809cea0bb/artifacts
+end_time: 1788977039470
+entry_point_name: ''
+experiment_id: '706411297583158800'
+lifecycle_stage: active
+run_id: 33830851a3224d659850c3f809cea0bb
+run_name: gregarious-loon-682
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1788977002237
+status: 3
+tags: []
+user_id: osegun

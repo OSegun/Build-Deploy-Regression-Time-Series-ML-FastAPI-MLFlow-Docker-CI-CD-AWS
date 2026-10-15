@@ -15,6 +15,7 @@ import pandas as pd
 
 
 PROCESSED_DIR = Path("data/processed")
+FEATURES_DIR = Path("data/features")
 MODELS_DIR = Path("models")
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -71,7 +72,7 @@ def engineer_features(
     train_path: Path | str | None = None,
     test_path: Path | str | None = None,
     new_data_path: Path | str | None = None,
-    output_dir: Path | str = PROCESSED_DIR,
+    output_dir: Path | str = FEATURES_DIR,
 ):
     """
     Run feature engineering and write outputs + encoders to disk.
@@ -120,9 +121,9 @@ def engineer_features(
     new_data_df, _ = drop_unused_columns(new_data_df.copy(), new_data_df.copy())
 
     # Save engineered data
-    out_train_path = output_dir / "feature_engineered_train.csv"
-    out_test_path = output_dir / "feature_engineered_test.csv"
-    out_new_data_path = output_dir / "feature_engineered_new_data.csv"
+    out_train_path = output_dir / "featured_train_data.csv"
+    out_test_path = output_dir / "featured_test_data.csv"
+    out_new_data_path = output_dir / "featured_new_data.csv"
     train_df.to_csv(out_train_path, index=False)
     test_df.to_csv(out_test_path, index=False)
     new_data_df.to_csv(out_new_data_path, index=False)

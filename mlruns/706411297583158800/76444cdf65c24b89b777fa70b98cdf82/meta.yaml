@@ -1,0 +1,14 @@
+artifact_uri: file:///mnt/c/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/mlruns/706411297583158800/76444cdf65c24b89b777fa70b98cdf82/artifacts
+end_time: 1788977064417
+entry_point_name: ''
+experiment_id: '706411297583158800'
+lifecycle_stage: active
+run_id: 76444cdf65c24b89b777fa70b98cdf82
+run_name: polite-moth-362
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1788977039619
+status: 3
+tags: []
+user_id: osegun

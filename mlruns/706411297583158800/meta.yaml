@@ -1,0 +1,7 @@
+artifact_location: file:///mnt/c/Users/HP/Desktop/3mtt/Build-Deploy-Regression-Time-Series-ML-FastAPI-MLFlow-Docker-CI-CD-AWS/mlruns/706411297583158800
+creation_time: 1788976984962
+experiment_id: '706411297583158800'
+last_update_time: 1788976984962
+lifecycle_stage: active
+name: smoke_test
+workspace: default

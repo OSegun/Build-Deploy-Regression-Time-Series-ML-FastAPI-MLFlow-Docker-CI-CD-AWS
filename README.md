@@ -33,11 +33,11 @@ The project uses a **US housing dataset** with geographic, demographic, and econ
 **Download the dataset from Kaggle:**
 [https://www.kaggle.com/datasets/shengkunwang/housets-dataset](https://www.kaggle.com/datasets/shengkunwang/housets-dataset)
 
-| Stat | Value |
-|---|---|
-| Market Price Variance | ~20% across neighborhoods |
-| Data Features | 1,000+ geographic, demographic & economic attributes |
-| Historical Coverage | 5+ years of market data |
+| Stat                  | Value                                                |
+| --------------------- | ---------------------------------------------------- |
+| Market Price Variance | ~20% across neighborhoods                            |
+| Data Features         | 1,000+ geographic, demographic & economic attributes |
+| Historical Coverage   | 5+ years of market data                              |
 
 ---
 
@@ -134,26 +134,29 @@ uv pip install -r requirements.txt
 
 1. Go to [https://www.kaggle.com/datasets/shengkunwang/housets-dataset](https://www.kaggle.com/datasets/shengkunwang/housets-dataset)
 2. Download and extract the CSV file(s) into a `data/raw/` directory:
-    Go to your Kaggle account → Settings → Create API Token
-    This downloads kaggle.json or create a kaggle.json file and copy the json below putting your API Token and username
-    
-    ```json
-    {
-        "username":"your_username",
-        "key":"your_api_token"
-    }
-    ```
+   Go to your Kaggle account → Settings → Create API Token
+   This downloads kaggle.json or create a kaggle.json file and copy the json below putting your API Token and username
 
-    Place that file into:
-    ```bash
-    ~/.kaggle/kaggle.json
-    ```
+   ```json
+   {
+     "username": "your_username",
+     "key": "your_api_token"
+   }
+   ```
 
-    In your /notebooks/01_data_split.ipynb, open a cell to download
-    ```bash
-    !kaggle datasets download -d shengkunwang/housets-dataset -p data/raw --unzip
-    ```
-    This will download into data/raw
+   Place that file into:
+
+   ```bash
+   ~/.kaggle/kaggle.json
+   ```
+
+   In your /notebooks/01_data_split.ipynb, open a cell to download
+
+   ```bash
+   !kaggle datasets download -d shengkunwang/housets-dataset -p data/raw --unzip
+   ```
+
+   This will download into data/raw
 
 ### 8. Configure Environment Variables
 
@@ -257,42 +260,42 @@ streamlit run src/dashboard/app.py
 
 ### Machine Learning
 
-| Library | Purpose |
-|---|---|
-| XGBoost | Gradient boosting regression on tabular data |
-| Optuna | Bayesian hyperparameter optimisation |
-| MLflow | Experiment tracking & model versioning |
-| Scikit-learn | Preprocessing, feature engineering & evaluation |
-| Great Expectations | Automated data quality checks |
-| Pytest | Unit testing & code quality |
+| Library            | Purpose                                         |
+| ------------------ | ----------------------------------------------- |
+| XGBoost            | Gradient boosting regression on tabular data    |
+| Optuna             | Bayesian hyperparameter optimisation            |
+| MLflow             | Experiment tracking & model versioning          |
+| Scikit-learn       | Preprocessing, feature engineering & evaluation |
+| Great Expectations | Automated data quality checks                   |
+| Pytest             | Unit testing & code quality                     |
 
 ### API & Dashboard
 
-| Library | Purpose |
-|---|---|
-| FastAPI | High-performance REST API with auto docs |
-| Pydantic | Data validation & settings management |
-| Streamlit | Interactive web dashboard |
-| Plotly | Responsive, interactive visualisations |
+| Library   | Purpose                                  |
+| --------- | ---------------------------------------- |
+| FastAPI   | High-performance REST API with auto docs |
+| Pydantic  | Data validation & settings management    |
+| Streamlit | Interactive web dashboard                |
+| Plotly    | Responsive, interactive visualisations   |
 
 ### Data Processing
 
-| Library | Purpose |
-|---|---|
-| Pandas | Data manipulation & transformation |
-| NumPy | Numerical computing |
-| Dask | Parallel computing on large datasets |
+| Library | Purpose                              |
+| ------- | ------------------------------------ |
+| Pandas  | Data manipulation & transformation   |
+| NumPy   | Numerical computing                  |
+| Dask    | Parallel computing on large datasets |
 
 ### Cloud & DevOps
 
-| Tool | Purpose |
-|---|---|
-| AWS S3 | Centralised data lake & model storage |
-| AWS ECR | Container image registry |
-| AWS ECS Fargate | Serverless container orchestration |
-| AWS ALB | Application load balancing |
-| Docker | Containerisation & reproducibility |
-| GitHub Actions | CI/CD automation |
+| Tool            | Purpose                               |
+| --------------- | ------------------------------------- |
+| AWS S3          | Centralised data lake & model storage |
+| AWS ECR         | Container image registry              |
+| AWS ECS Fargate | Serverless container orchestration    |
+| AWS ALB         | Application load balancing            |
+| Docker          | Containerisation & reproducibility    |
+| GitHub Actions  | CI/CD automation                      |
 
 ---
 
@@ -338,22 +341,22 @@ Raw Data
 
 Validated across multiple time periods using time-based cross-validation:
 
-| Metric | Value |
-|---|---|
-| MAE (Mean Absolute Error) | $12,450 |
+| Metric                         | Value   |
+| ------------------------------ | ------- |
+| MAE (Mean Absolute Error)      | $12,450 |
 | RMSE (Root Mean Squared Error) | $18,230 |
-| Mean Percentage Error | 8.2% |
+| Mean Percentage Error          | 8.2%    |
 
 ---
 
 ## AWS Cloud Deployment
 
-| Service | Role |
-|---|---|
-| S3 | Raw datasets, processed features, trained models, batch outputs |
-| ECR | Container image storage with versioning |
-| ECS Fargate | Serverless container orchestration with auto-scaling |
-| ALB | Routes traffic to containers with SSL termination |
+| Service     | Role                                                            |
+| ----------- | --------------------------------------------------------------- |
+| S3          | Raw datasets, processed features, trained models, batch outputs |
+| ECR         | Container image storage with versioning                         |
+| ECS Fargate | Serverless container orchestration with auto-scaling            |
+| ALB         | Routes traffic to containers with SSL termination               |
 
 Infrastructure is defined as code (Terraform / AWS CloudFormation) for reproducible, version-controlled deployments with support for blue-green zero-downtime updates.
 
@@ -372,3 +375,11 @@ Infrastructure is defined as code (Terraform / AWS CloudFormation) for reproduci
 ## Workshop Reference
 
 This project accompanies the **Housing Regression MLE End-to-End Deployment** slide deck provided to workshop participants. Refer to the PDF for detailed explanations of each pipeline stage, architecture decisions, and deployment strategies.
+
+## Recognition
+
+These projects were developed for mentees as part of my volunteer contribution to the **3MTT Mentorship Program**.
+
+![3MTT Cohort 1](./img/cohort_1.jpeg)
+
+![3MTT Cohort 2](./img/cohort_2.jpeg)
